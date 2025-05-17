@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>CheerpJ Drools</title>
+    <script src="https://cjrtnc.leaningtech.com/4.0/loader.js"></script>
+  </head>
+  <body>
+    <script>
+      (async function () {
+        await cheerpjInit({version: 11});
+
+        cheerpjRunMain(
+            "org.example.cheerpjdrools.drinkrule.Main",
+            "/app/drink-rule-1.0.0-SNAPSHOT.jar"
+        );
+      })();
+    </script>
+    hello CheerpJ Drools
+  </body>
+</html>
